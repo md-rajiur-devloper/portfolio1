@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+body{
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+}
+/* Loading Screen Styles */
+.main-item {
+  /* padding: 10px; */
+  background-color: #fff;
+  /* width: 700px; */
+  height: 100%;
+  z-index: 1;
+}
+
+.background-masker {
+  background-color: #fff;
+  position: absolute;
+}
+
+.btn-divide-left {
+  top: 0;
+  /* left: 25%; */
+  /* height: 100%; */
+  /* width: 5%; */
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0
+  }
+  100% {
+    background-position: 800px 0
+  }
+}
+
+.animated-background {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 70px;
+  position: relative;
+}
+
+.static-background {
+  background-color: #f6f7f8;
+  background-size: 800px 104px;
+  /* height: 70px; */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.shared-dom {
+  width: 800px;
+  height: 110px;
+}
+.sub-rect {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+.pure-background {
+  background-color: #eee;
+}
+
+.css-dom:empty {
+  width: 280px;
+  height: 220px;
+  border-radius: 6px;
+  box-shadow: 0 10px 45px rgba(0, 0, 0, .2);
+  background-repeat: no-repeat;
+  
+  
+  background-image:
+    radial-gradient(circle 16px, lightgray 99%, transparent 0),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(#fff, #fff); 
+  
+  background-size:
+    32px 32px,
+    200px 32px,
+    180px 32px,
+    230px 16px,
+    100% 40px,
+    280px 100%;
+  
+  background-position:
+    24px 30px,
+    66px 30px,
+    24px 90px,
+    24px 142px,
+    0 180px,
+    0 0;
+    
+}
+#loading-item {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Background color for the loading screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above all other content */
+  }
+  
+  body.loading-active {
+    overflow: hidden; /* Prevent scrolling while loading */
+  }
+
+/* END    */
+
+.header{
+    height: 100px;
+}
+.container {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    max-width: 100% !important;
+}
+
+:root{
+    --primary: #C778DD;
+    --white: #ffffff;
+    --gray: #ABB2BF;
+    --background: #282C33;
+
+}
+
+
+/* Navber Design  */
+
+.nav-link{
+    color: var(--gray);
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.hashtag:hover{
+    color: var(--primary);
+    transition: all 0.8s ease;
+    cursor: pointer;
+
+}
+.hashtag {
+    color: var(--primary);
+    margin:0 5px
+}
+
+
+.Project_list{
+    color: var(--white);
+}
+
+.Main-title{
+    color: var(--gray);
+    text-align: center;
+    font-size: 24px;
+}
+.Projects-title .hashtag{
+    color: var(--primary);
+    font-size: 24px;
+    
+}
+
+.Projects-title h2{
+    color: var(--white);
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.Projects-title button.btn-outline2{
+    border: none;
+    background-color: var(--primary);
+    height: 0px;
+    margin-left: 70px;
+    padding-left: 35%;
+    cursor:default;
+}
+
+
+/* Project Card Design Start  */
+
+
+.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* 10px for row gap, 5px for column gap */
+    margin-top: 40px;
+    padding: 0 100px;
+}
+
+.card-size .card{
+    border: none !important;
+    background-color:var(--background) !important;
+   height: 390px;
+}
+
+.card-size{ 
+    background: var(--background);
+    border: 1px solid var(--gray);
+    width: 330px;
+    transition: transform 0.3s ease;
+   padding: 0px;
+   
+}
+
+.card-size.card-size:hover {
+    transform: translateY(-5px);
+}
+
+.card-size .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body .project-tech {
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    padding: 8px 16px;
+}
+
+.card-body .project-tech span {
+    color: var(--white);
+    font-size: 14px;
+    opacity: 0.9;
+}
+.card-size .card-body{
+    /* padding: 24px; */
+    /* background-color: var(--background) !important; */
+    padding: 0px !important;
+   
+}
+
+.project-card h5 {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.project-card p {
+    color: var(--gray);
+    font-size: 16px;
+    margin: 0 0 16px;
+
+}
+
+.project-button {
+    display: flex;
+    gap: 16px;
+}
+.project-button .btn-outline {
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.project-button .btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-outline span {
+    margin-left: 8px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--background);
+    height: 400px;
+    width:85%;
+
+}
+.small-card{
+    height: 335px;
+    width: 90%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Project Card Design End  */
+
+
+
+/* Small Project Design Start */
+
+
+.small-card{
+    height: 335px;
+    width: 90%;
+}
+
+.card-body{
+    padding: 0px !important;
+}
+.applyCode{
+    border: 1px solid var(--white);
+    color: var(--gray);
+    padding: 8px 16px;
+}
+.small-card h5{
+    color: var(--white);
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+.small-card p{
+    color: var(--gray);
+    font-size: 16px;
+    margin: 0 0 16px;
+    text-align: justify;
+}
+
+.Small-button .btn-outline {
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.Small-button .btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Footer Section Start */
+.logo>img{
+    width: 90px;
+    height:29px;
+}
+.logo>span{
+    color: var(--gray);
+}
+
+.allMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.allMedia>h3{
+    color: var(--gray);
+}
+.fa-brands{
+    color: var(--gray);
+    font-size: 24px;
+}
+.copyWrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+}
+

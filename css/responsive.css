@@ -1,0 +1,144 @@
+/* Small and Medium Device Responsive Styles */
+@media (min-width: 300px) and (max-width: 767px) {
+    body {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .hdTitel > h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+    .hdTitel>p {
+        font-size: 12px;
+        width: 100%;
+        
+    }
+
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+
+    .imageResize {
+        height: 362px;
+        align-items: center;
+        width: 290px;
+        margin-left: 10%;
+    }
+
+    .border-resize {
+        border: 1px solid var(--primary);
+        width: 337px;
+    }
+
+
+    h3.quote-author {
+        left: 0;
+        bottom: 9px;
+    }
+
+
+    /* Projects Section */
+
+    .btn-outline2 {
+        padding-left: 50px;
+        margin-left: 0px;
+    }
+
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Skill Section */
+    .skills-section .btn-outline2 {
+        padding-left: 260px;
+
+    }
+
+    /* ABOUT ME SECTION */
+    .about-me .btn-outline2 {
+        padding-left: 180px;
+
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hdTitel>h1 {
+        font-size: 20px;
+    }
+
+    .hdTitel>p {
+        font-size: 15px;
+        color: gray;
+        width: 330px;
+        height: 8px;
+    }
+
+    .hdTitel>button {
+        padding: 6px 40px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    
+    .imageResize>img {
+        width: 256px;
+        height: 247px;
+    }
+
+    .border-resize {
+        border: 1px solid var(--primary);
+        width: 263px;
+        font-size: 11px;
+    }
+
+    h3.quote-author {
+        bottom: 8px;
+        left: 0px;
+        padding: 15px;
+    }
+
+    .btn-outline2{
+        margin-left: 27px;
+  padding-left: 191px;
+    }
+
+    .projects-grid{
+        padding: 0;
+    }
+
+    .project-card{
+        width: 280px;
+        margin-bottom: 10px;
+    }
+
+    .skills-image>img{
+        width: 277px;
+       margin-top: 50px;
+    }
+    .imageResize {
+        height: 498px;
+        margin-left: 11%;
+        width: 300px;
+        margin-top: 0pxpx;
+      }
+
+
+
+      
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+
+/* Loading Screen Styles */
+
+.main-item {
+    /* padding: 10px; */
+    background-color: #fff;
+    /* width: 700px; */
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .background-masker {
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .btn-divide-left {
+    top: 0;
+    /* left: 25%; */
+    /* height: 100%; */
+    /* width: 5%; */
+  }
+  
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -800px 0
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+  
+  .animated-background {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 70px;
+    position: relative;
+  }
+  
+  .static-background {
+    background-color: #f6f7f8;
+    background-size: 800px 104px;
+    /* height: 70px; */
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .shared-dom {
+    width: 800px;
+    height: 110px;
+  }
+  .sub-rect {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 20px 20px 20px 0;
+  }
+  .pure-background {
+    background-color: #eee;
+  }
+  
+  .css-dom:empty {
+    width: 280px;
+    height: 220px;
+    border-radius: 6px;
+    box-shadow: 0 10px 45px rgba(0, 0, 0, .2);
+    background-repeat: no-repeat;
+    
+    
+    background-image:
+      radial-gradient(circle 16px, lightgray 99%, transparent 0),
+      linear-gradient(lightgray, lightgray),
+      linear-gradient(lightgray, lightgray),
+      linear-gradient(lightgray, lightgray),
+      linear-gradient(lightgray, lightgray),
+      linear-gradient(#fff, #fff); 
+    
+    background-size:
+      32px 32px,
+      200px 32px,
+      180px 32px,
+      230px 16px,
+      100% 40px,
+      280px 100%;
+    
+    background-position:
+      24px 30px,
+      66px 30px,
+      24px 90px,
+      24px 142px,
+      0 180px,
+      0 0;
+      
+  }
+  #loading-item {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; /* Background color for the loading screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Ensure it appears above all other content */
+    }
+    
+    body.loading-active {
+      overflow: hidden; /* Prevent scrolling while loading */
+    }
+
+  /* END  */
+
+body{
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    max-width: 100% !important;
+}
+
+:root{
+    --primary: #C778DD;
+    --white: #ffffff;
+    --gray: #ABB2BF;
+    --background: #282C33;
+
+}
+
+
+/* Hader Part Design Start  */
+
+/* Navber Design */
+.nav-link{
+    color: var(--gray);
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.hashtag:hover{
+    color: var(--primary);
+    transition: all 0.8s ease;
+    cursor: pointer;
+
+}
+.hashtag {
+    color: var(--primary);
+    margin:0 5px
+}
+
+/* Contact Section  Start */
+
+.contact-section .hashtag {
+    color: var(--primary);
+    font-size: 32px;
+}
+.contact-section h2 {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin: 0;
+}
+.contact-section .btn-outline2{
+    border: none;
+    background-color: var(--primary);
+    height: 0px;
+    margin-left: 10px;
+    padding-left: 35%;
+}
+
+.contact-content {
+    padding: 24px;
+    color: var(--gray) ;
+    padding-left: 50px;
+    text-align: justify;
+}
+.card-message{
+    background-color: var(--background);
+    color: var(--white);
+    /* padding: 20px; */
+    width: 19.375rem;
+    border: 1px solid var(--gray);
+    border-radius: 0px;
+    
+}
+
+
+.contact-me span{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.contact-me span i{
+  padding: 0 6px;
+}
+
+/* Contact Section End */
+
+
+
+/* Footer Section Start */
+.logo>img{
+    width: 90px;
+    height:29px;
+}
+.logo>span{
+    color: var(--gray);
+}
+
+.allMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.allMedia>h3{
+    color: var(--gray);
+}
+.fa-brands{
+    color: var(--gray);
+    font-size: 24px;
+}
+.copyWrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+}
+
+
+
+
+/* Responsive Design Start */
+
+
+@media (max-width: 1440px) {
+  .card-message{
+    width: 16rem;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .card-message span{
+    font-size: 12px;
+  }
+  .fa-brands.fa-discord{
+    font-size: 16px;
+  }
+ 
+}
+/* Responsive Design End  */

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+body{
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    max-width: 100% !important;
+}
+
+:root{
+    --primary: #C778DD;
+    --white: #ffffff;
+    --gray: #ABB2BF;
+    --background: #282C33;
+
+}
+
+
+
+/* Navber Part Design Start  */
+.nav-link{
+    color: var(--gray);
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white);
+}
+
+.nav-link:hover,
+.nav-link:active,
+.hashtag:hover{
+    color: var(--primary);
+    transition: all 0.8s ease;
+    cursor: pointer;
+
+}
+.hashtag {
+    color: var(--primary);
+    margin:0 5px
+}
+    /* Nevbar Part Design End   */
+
+
+
+
+/* About Section Start */
+
+
+.about-me{
+    gap: 50px;
+}
+  
+
+.about-me h2{
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.about-me .hashtag{
+    color: var(--primary);
+    font-size: 32px;
+    margin-top:45px;
+}
+
+.about-content{
+    padding: 24px;
+    color: var(--gray) ;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+.about-image{
+    width: 100%;
+    /* height: 386px;    */
+}
+.imageResize{
+    height: 410px;
+    margin-left: 30%;
+    /* width:350px; */
+}
+/* About Section End */
+
+
+/* Skill Section Start  */
+
+.Skill-title h2{
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.Skill-title .hashtag{
+    color: var(--primary);
+    font-size: 32px;
+    margin-top:45px;
+}
+.skill-card .card-body{
+    /* padding: 24px; */
+    /* background-color: var(--background) !important; */
+    padding: 0px !important;
+   
+}
+.skill-card {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--background);
+   
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+.applyCode{
+    border: 1px solid var(--white);
+    color: var(--gray);
+    padding: 8px 16px;
+}
+.skill-card span{
+    color: var(--white);
+    font-size:14px;
+    margin: 0 0 8px;
+}
+.skill-card p{
+    color: var(--gray);
+    font-size: 16px;
+    margin: 0 0 16px;
+    text-align: justify;
+}
+/* Skill Section End  */
+
+
+/* My Fun Facts Start */
+
+.facts{
+    width: 50%;
+   
+}
+.facts-img{
+    width: 50%;
+    padding-left: 10%;
+}
+.facts span{
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    padding: 3px 16px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* My Fun Facts End */
+
+
+/* Footer Section Start */
+.logo>img{
+    width: 90px;
+    height:29px;
+}
+.logo>span{
+    color: var(--gray);
+}
+
+.allMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.allMedia>h3{
+    color: var(--gray);
+}
+.fa-brands{
+    color: var(--gray);
+    font-size: 24px;
+}
+.copyWrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+}
+
+
+
+/* Responsive Page Start */
+@media (min-width: 300px) and (max-width: 767px) {
+    .about-content{
+        padding: 0px !important;
+    }
+    .about-content p{
+        font-size: 12px !important;
+        text-align: justify;
+    }
+    .about-image{
+       margin-left: 15%;
+        align-items: center;
+        width: 0px;
+        margin-top: 10px !important;
+       
+    }
+    .imageResize{
+        height: 200px;
+    }
+
+
+    .facts-img{
+        display: none;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .about-content{
+        padding: 0px !important;
+    }
+    .about-content p{
+        font-size: 12px !important;
+        text-align: justify;
+    }
+    .about-image{
+       margin-left: 15%;
+        align-items: center;
+        width: 0px;
+        margin-top: 10px !important;
+       
+    }
+    .imageResize{
+        height: 200px;
+    }
+    .skill-card span{
+        font-size: 17px !important;
+    }
+
+    
+}
+/* Responsive Page End */
+
+
+
