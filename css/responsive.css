@@ -62,7 +62,7 @@
 
     /* Skill Section */
     .skills-section .btn-outline2 {
-        padding-left: 260px;
+        padding-left:100px;
 
     }
 
@@ -70,6 +70,9 @@
     .about-me .btn-outline2 {
         padding-left: 180px;
 
+    }
+    .message{
+        margin-left: 0px;
     }
 }
 
