@@ -181,7 +181,9 @@ a{
     margin:0 5px
 }
 /* header Design  */
-
+.header-section{
+    margin-top: 80px;
+}
 .hdTitel>h1{
    font-size: 32px;
 }
@@ -649,10 +651,7 @@ h3.quote-author {
 }
 
 /* Footer Section Start */
-.logo>img{
-    width: 90px;
-    height:29px;
-}
+
 .logo>span{
     color: var(--gray);
 }

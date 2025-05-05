@@ -367,10 +367,7 @@ body{
 }
 
 /* Footer Section Start */
-.logo>img{
-    width: 90px;
-    height:29px;
-}
+
 .logo>span{
     color: var(--gray);
 }
